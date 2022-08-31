@@ -9,7 +9,7 @@ function App(props) {
   return (
 <div className='container'>
   <NavBar/>
-  <h3>{mensaje}</h3>
+  <h3 className= 'text-3xl font-bold underline'>{mensaje}</h3>
 </div>
   );
 }
