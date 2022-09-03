@@ -1,4 +1,4 @@
-html,
+/*html,
 body {
   width: 100%;
   height: 100%;
@@ -64,7 +64,7 @@ body {
 }
 
 /*Variables*/
-.s-jumbo {
+/*.s-jumbo {
   font-size: 6.8em;
 }
 
@@ -109,13 +109,13 @@ body {
 }
 
 /*Helpers*/
-.container {
+/*.container {
   max-width: 1080px;
   margin: 0 auto;
 }
 
 /* Normalize es el reseteo de CSS que le quita los valores por defecto del navegador*/
-*,
+/*,
 *::before,
 *::after {
   margin: 0;
@@ -124,7 +124,7 @@ body {
 }
 
 /*Globals*/
-html {
+/*html {
   font-size: 62.5%;
 }
 
@@ -147,7 +147,7 @@ ul {
 }
 
 /* BOTÓN */
-.botono,
+/*.botono,
 .principal__button {
   color: #ebebeb;
   padding: 10px;
@@ -191,7 +191,7 @@ input {
 }
 
 /* PARTIALS */
-.container nav {
+/*.container nav {
   max-width: 960px;
   margin: 0 auto;
   padding: 12px;
@@ -202,7 +202,7 @@ input {
   flex-wrap: wrap;
   align-items: center;
   /*Centra los hijos del contenedor flex de manera vertical.*/
-  justify-content: space-between;
+ /* justify-content: space-between;
   background-color: #ebebeb;
   padding-block: 15px;
   border-radius: 9px;
@@ -227,7 +227,7 @@ input {
 .navbar label {
   display: none;
   /*Ocultará la checkbox en pantallas más grandes.*/
-}
+/*}
 
 .logo {
   display: flex;
@@ -281,7 +281,7 @@ input {
 }
 
 /*MEDIA QUERIES*/
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
   .menu {
     width: 100%;
     max-height: 0;
@@ -320,7 +320,7 @@ input {
 }
 
 /* VIEWS */
-.principal {
+/*.principal {
   flex-wrap: wrap;
   background-color: #52004f1c;
   align-items: center;
@@ -399,3 +399,8 @@ article p {
     color: #54582f;
     font-size: 1.8em;
     }
+*/
+
+.fondo-hero{
+background-image: url(https://financerewind.com/wp-content/uploads/2020/07/cyberpunk-M.jpeg);
+}
