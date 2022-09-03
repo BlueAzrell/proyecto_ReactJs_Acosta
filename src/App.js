@@ -18,8 +18,6 @@ function App(props) {
   <Hero/>
   <Carrousel/>
   <Card/>
-  <Card/>
-  <Card/>
 </div>
   );
 }
