@@ -6,7 +6,7 @@ const Carrousel = () => {
     <img src="https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/ryzen_4000.jpg" class="w-full" alt="El logo de la marca PelidaMax"/>
   </div> 
   <div id="item2" className="carousel-item w-full">
-    <img src="https://www.rabinsxp.com/medias/AMD-Ryzen-7000-Processors-Price-Launch-Date.jpg" class="w-full" alt="El logo de la marca PelidaMax"/>
+    <img src="https://www.rabinsxp.com/medias/AMD-Ryzen-7000-parts-Price-Launch-Date.jpg" class="w-full" alt="El logo de la marca PelidaMax"/>
   </div> 
   <div id="item3" className="carousel-item w-full">
     <img src="https://cdn.eteknix.com/wp-content/uploads/2020/11/ryzen-cpu-1.jpg" class="w-full" alt="El logo de la marca PelidaMax"/>

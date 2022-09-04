@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "title": "Ryzen 5 5600G",
+        "price": 37000,
+        "img": "./img/ryzen55600g.jpg"
+    },
+    {
+        "id": "2",
+        "title": "Ryzen 5 5600",
+        "price": 36400,
+        "img": "./img/ryzen55600.jpg"
+    },
+    {
+        "id": "3",
+        "title": "Corsair RGB Pro 8GB",
+        "price": 9500,
+        "img": "./img/corsairrgb.png"
+    },
+    {
+        "id": "4",
+        "title": "Corsair Vengeance 8GB",
+        "price": 6000,
+        "img": "../img/corsairvengeance.jpg"
+    },
+    {
+        "id": "5",
+        "title": "SanDisk Ultra 480GB'",
+        "price": 7800,
+        "img": "./img/sanDiskultra.jpg"
+    },
+    {
+        "id": "6",
+        "title": "Seagate 2TB 5400RPM",
+        "price": 6000,
+        "img": "../img/Seagate2tb.jpg"
+    },
+    {
+        "id": "7",
+        "title": "Gamemax VP 500W",
+        "price": 8000,
+        "img": "../img/Gamemaxvp.jpg"
+    }
+]

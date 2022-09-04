@@ -4,6 +4,7 @@ import Card from './components/Card';
 import Carrousel from './components/Carrousel';
 import DaisyNavBar from './components/DaisyNavBar';
 import Hero from './components/Hero';
+import { PartsContainer } from './components/PartsContainer';
 
 function App(props) {
 
@@ -68,6 +69,8 @@ function App(props) {
  </div>
  <button onClick={handleClick} className='btn'>Click acá</button>
  <button onClick={restaClick} className='btn'>Resta acá</button>
+
+<PartsContainer/>
 
  {products.map( p => <li className='bg-lime-200'>{p}</li>)}
 
