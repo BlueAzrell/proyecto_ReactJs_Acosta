@@ -1,6 +1,6 @@
 const ItemListContainer = ({greeting}) => {
   return (
-    <div class= 'saludacos'>{greeting}</div>
+    <div className= 'saludacos'>{greeting}</div>
   )
 }
 export default ItemListContainer
