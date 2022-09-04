@@ -13,9 +13,32 @@ function App(props) {
   }
 
   const [counter, setCounter] = useState(0)
+  const [products, setProducts] = useState([])
 
   useEffect(() => {
-    console.log('Efecto al montaje');
+    console.log('Promesa al montaje');
+
+    const getProducts = new Promise( (resolve, reject) => {
+      const rand = Math.random()
+      console.log(rand);
+
+      if(rand > 0.5 ) {
+        resolve( ['mouse', 'teclado', 'cpu'])
+
+      }else{
+        reject('Promesa rechazada')
+      }
+    })
+
+    getProducts
+    .then( data => {
+      console.log (data);
+      setProducts(data)
+    })
+    .catch(err => {console.log(err);})
+    .finally(() => { console.log( 'finally es inevitable');})
+
+
   }, [])
 
   useEffect(() => {
@@ -45,6 +68,8 @@ function App(props) {
  </div>
  <button onClick={handleClick} className='btn'>Click acá</button>
  <button onClick={restaClick} className='btn'>Resta acá</button>
+
+ {products.map( p => <li className='bg-lime-200'>{p}</li>)}
 
   <h3 className={styles.title}>{mensaje}</h3>
   <div className='my-5'><Hero/></div>
