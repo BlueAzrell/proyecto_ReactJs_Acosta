@@ -26,6 +26,8 @@ export const PartsContainer = () => {
 
  return( <div>
    <PartsList parts={parts} />
+
+
  </div>
  );
 };
