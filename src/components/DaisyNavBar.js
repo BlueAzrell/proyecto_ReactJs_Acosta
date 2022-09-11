@@ -1,10 +1,14 @@
+import { NavLink, Link } from "react-router-dom"
+
 const DaisyNavBar = () => {
   return (
     <div className="navbar bg-base-100">
     <div className="flex-1">
-      <picture className="navlogo">
+      <Link to={'/'}><picture className="navlogo">
                 <img className="btn btn-ghost normal-case text-xl" src="/img/loguito.png" alt="El logo de la marca PelidaMax"></img>
-            </picture>
+            </picture></Link>
+            <NavLink className="btn btn-ghost normal-case text-xl" activeClassName="bg-lime-300" to={'/hero'}>Hero</NavLink>
+            <NavLink className="btn btn-ghost normal-case text-xl" activeClassName="bg-lime-300" to={'/parts'}>Parts</NavLink>      
     </div>
     <div className="flex-none">
       <div className="dropdown dropdown-end">

@@ -1,7 +1,6 @@
 import './App.css';
 import Card from './components/Card';
 import Carrousel from './components/Carrousel';
-import DaisyNavBar from './components/DaisyNavBar';
 import Hero from './components/Hero';
 import { PartsContainer } from './components/PartsContainer';
 
@@ -15,11 +14,8 @@ function App(props) {
 
   return (
 <div className='container'>
-<DaisyNavBar/>
 
 <h3 className={styles.title}>{mensaje}</h3>
-
- 
 
 <PartsContainer/>
 

@@ -25,6 +25,7 @@ export const Parts = ({title, img, price}) => {
   const handleClick = () => { //botón para agregar +1 al contador
      console.log('Hiciste click');
      setCounter(counter + 1)
+     
    }
   
    const restaClick = () => { //botón para restar -1 al contador
