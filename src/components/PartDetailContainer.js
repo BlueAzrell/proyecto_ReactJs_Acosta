@@ -1,37 +1,25 @@
+import { useState } from "react";
+import { useEffect } from "react";
 import {useParams} from "react-router-dom"
-import {Parts, parts} from "./Parts"
-import React from 'react'
-import { useEffect } from "react"
-import { setParts } from "./PartsContainer"
 import partsJson from "../parts.json"
-
+import {Parts} from "./Parts"
 
 const PartDetailContainer = () => {
-    const { id } = useParams()
-    console.log('param id:' + id)
+  const [parts, setParts] = useState([]);
+  const { id } = useParams()
 
-    const getParts = (data, time) => 
-      new Promise((resolve, reject)=>{
-         setTimeout(()=>{
-            if(data){
-               resolve(data);
-            }else{
-               reject("Error");
-            }
-         }, time);
-      });
+  useEffect(() => {
+    const JSON = partsJson + id
+    fetch( JSON )
+    .then(res => res.json() )
+    .then(data => {
+      setParts( data )
+    })
+  }, [])
 
-    useEffect(() => {
-      getParts(partsJson) //simula la carga de la página
-      .then((res)=>{
-         setParts(res);
-        
-      })
-    }, [])
-    
-    
   return (
-    parts.map( (parts) => <Parts key={parts.id} {...parts} />)
+    <Parts {...parts} />
   )
 }
 export default PartDetailContainer
+

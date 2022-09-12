@@ -6,7 +6,8 @@ export const PartsList = ({parts}) => {
   return (
     <section>
       {parts.length ? ( //ternario
-        parts.map( (parts) => <Parts key={parts.id} {...parts} />) //el uso de {...parts} trae todos los elementos del array del json para que Parts.js los use al antojo por medio de su const Parts
+        parts.map( (parts) => 
+        <Parts key={parts.id} {...parts} />) //el uso de {...parts} trae todos los elementos del array del json para que Parts.js los use al antojo por medio de su const Parts
         ): (
         <progress class="progress w-56 my-5 "></progress>
       )}
