@@ -34,7 +34,7 @@ export const Parts = ({title, img, price}) => {
    }
 
   return (
-    <article>
+    <article> 
    <h3>{title}</h3>
    <h4 style={{color: styleSelected ? "green" : "orange", cursor: "pointer"}} //cambio del cursor a modo pointer al pasar por por el marcador
    onClick={selectedParts}

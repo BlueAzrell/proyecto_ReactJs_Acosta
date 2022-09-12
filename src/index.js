@@ -8,6 +8,7 @@ import Hero from './components/Hero';
 import { PartsContainer } from './components/PartsContainer';
 import DaisyNavBar from './components/DaisyNavBar';
 import Footer from './components/Footer';
+import PartDetailContainer from './components/PartDetailContainer';
 //import ReactStrictMode from 'react'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -19,6 +20,7 @@ root.render(
    <Route path='/' element={<App/>}/>
    <Route path='/hero' element={<Hero/>}/>
    <Route path='/parts' element={<PartsContainer/>}/>
+   <Route path='/parts/:id' element={<PartDetailContainer/>}/>
   </Routes>
  <Footer/>
  </BrowserRouter>

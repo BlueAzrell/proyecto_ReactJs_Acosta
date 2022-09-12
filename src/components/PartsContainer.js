@@ -25,7 +25,7 @@ export const PartsContainer = () => {
    }, []);
 
  return( <div>
-   <PartsList parts={parts} />
+   <PartsList className='flex-row' parts={parts} />
 
 
  </div>
