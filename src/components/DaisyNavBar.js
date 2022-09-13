@@ -1,14 +1,18 @@
 import { NavLink, Link } from "react-router-dom"
 
 const DaisyNavBar = () => {
+
+const navLinkClass = (navData) =>
+  navData.isActive ? 'btn btn-ghost normal-case text-xl bg-lime-500' : 'btn btn-ghost normal-case text-xl'
+
   return (
     <div className="navbar bg-base-100">
     <div className="flex-1">
       <Link to={'/'}><picture className="navlogo">
                 <img className="btn btn-ghost normal-case text-xl" src="/img/loguito.png" alt="El logo de la marca PelidaMax"></img>
             </picture></Link>
-            <NavLink className="btn btn-ghost normal-case text-xl" activeClassName="bg-lime-300" to={'/hero'}>Hero</NavLink>
-            <NavLink className="btn btn-ghost normal-case text-xl" activeClassName="bg-lime-300" to={'/parts'}>Parts</NavLink>      
+            <NavLink className={navLinkClass} to={'/hero'}>Hero</NavLink>
+            <NavLink className={navLinkClass} to={'/parts'}>Parts</NavLink>      
     </div>
     <div className="flex-none">
       <div className="dropdown dropdown-end">
