@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {Parts} from "./Parts"
 
 export const PartsList = ({parts}) => {
@@ -7,7 +8,9 @@ export const PartsList = ({parts}) => {
     <section>
       {parts.length ? ( //ternario
         parts.map( (parts) => 
-        <Parts key={parts.id} {...parts} />) //el uso de {...parts} trae todos los elementos del array del json para que Parts.js los use al antojo por medio de su const Parts
+        <Link to={`/parts/${parts.id}`}>
+        <Parts key={parts.id} {...parts} />
+        </Link>)
         ): (
         <progress class="progress w-56 my-5 "></progress>
       )}
