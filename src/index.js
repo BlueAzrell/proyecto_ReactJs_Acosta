@@ -9,6 +9,8 @@ import { PartsContainer } from './components/PartsContainer';
 import DaisyNavBar from './components/DaisyNavBar';
 import Footer from './components/Footer';
 import PartDetailContainer from './components/PartDetailContainer';
+import ItemDetailContainer from './components/shop/ItemDetailContainer';
+import ItemListContainer from './components/shop/ItemListContainer';
 //import ReactStrictMode from 'react'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,6 +23,8 @@ root.render(
    <Route path='/hero' element={<Hero/>}/>
    <Route path='/parts' element={<PartsContainer/>}/>
    <Route path='/parts/:id' element={<PartDetailContainer/>}/>
+   <Route path='/shop' element={<ItemListContainer/>}/>
+   <Route path='/shop/item/:slug' element={<ItemDetailContainer/>}/>
   </Routes>
  <Footer/>
  </BrowserRouter>

@@ -12,7 +12,8 @@ const navLinkClass = (navData) =>
                 <img className="btn btn-ghost normal-case text-xl" src="/img/loguito.png" alt="El logo de la marca PelidaMax"></img>
             </picture></Link>
             <NavLink className={navLinkClass} to={'/hero'}>Hero</NavLink>
-            <NavLink className={navLinkClass} to={'/parts'}>Parts</NavLink>      
+            <NavLink className={navLinkClass} to={'/parts'}>Parts</NavLink>    
+            <NavLink className={navLinkClass} to={'/shop'}>Shop</NavLink>  
     </div>
     <div className="flex-none">
       <div className="dropdown dropdown-end">
