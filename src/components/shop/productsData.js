@@ -37,7 +37,7 @@ const products = [
         "slug": "ssdsdu",
         "price": 7800,
         "img": "./img/sanDiskultra.jpg",
-        "description": ''
+        "description": 'Unidad de Estado Sólido de Alta Velocidad'
     },
     {
         "id": "6",
@@ -45,7 +45,7 @@ const products = [
         "slug": "hddsg",
         "price": 6000,
         "img": "../img/Seagate2tb.jpg",
-        "description": ''
+        "description": 'Disco duro de alta capacidad'
     },
     {
         "id": "7",
@@ -53,7 +53,7 @@ const products = [
         "slug": "psugmvp",
         "price": 8000,
         "img": "../img/Gamemaxvp.jpg",
-        "description": ''
+        "description": 'Fuente de poder Calidad/Precio con las protecciones necesarias para proteger el equipo'
     }
 ]
 

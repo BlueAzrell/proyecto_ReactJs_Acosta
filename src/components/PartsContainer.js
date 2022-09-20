@@ -1,10 +1,12 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
+import { useCart } from '../context/CartContext';
 import partsJson from "../parts.json"
 import { PartsList } from './PartsList';
 
 export const PartsContainer = () => {
-    const [parts, setParts] = useState([]);
+    const [parts, setParts] = useState([])
+    const {cart } = useCart()
 
       const getParts = (data, time) => 
       new Promise((resolve, reject)=>{
@@ -26,6 +28,7 @@ export const PartsContainer = () => {
 
  return( <div>
    <PartsList className='flex-row' parts={parts} />
+   <strong>Carrito de compras</strong>{cart}
 
 
  </div>
