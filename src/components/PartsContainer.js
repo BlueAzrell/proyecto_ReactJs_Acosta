@@ -6,7 +6,7 @@ import { PartsList } from './PartsList';
 
 export const PartsContainer = () => {
     const [parts, setParts] = useState([])
-    const {cart } = useCart()
+    const {cart, clearCart } = useCart()
 
       const getParts = (data, time) => 
       new Promise((resolve, reject)=>{
@@ -28,7 +28,8 @@ export const PartsContainer = () => {
 
  return( <div>
    <PartsList className='flex-row' parts={parts} />
-   <strong>Carrito de compras</strong>{cart}
+   <strong>Carrito de compras</strong>{cart.map( (c, i) => <li key={i}>{c}</li>)}
+   <button className='btn' onClick={clearCart}>Borrar Carrito</button>
 
 
  </div>
