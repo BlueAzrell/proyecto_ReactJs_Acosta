@@ -11,7 +11,27 @@ import Footer from './components/Footer';
 import PartDetailContainer from './components/PartDetailContainer';
 import ItemDetailContainer from './components/shop/ItemDetailContainer';
 import ItemListContainer from './components/shop/ItemListContainer';
+import ProductsContainer from './components/firebase/ProductsContainer';
 //import ReactStrictMode from 'react'
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import Category from './components/firebase/Category';
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: process.env.REACT_APP_apiKey,
+  authDomain: process.env.REACT_APP_authDomain,
+  projectId: process.env.REACT_APP_projectId,
+  storageBucket: process.env.REACT_APP_storageBucket,
+  messagingSenderId: process.env.REACT_APP_messagingSenderId,
+  appId: process.env.REACT_APP_appId 
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -25,6 +45,8 @@ root.render(
    <Route path='/parts/:id' element={<PartDetailContainer/>}/>
    <Route path='/shop' element={<ItemListContainer/>}/>
    <Route path='/shop/item/:slug' element={<ItemDetailContainer/>}/>
+   <Route path='/products' element={<ProductsContainer/>}/>
+   <Route path='/products/category/:id' element={<Category/>}/>
   </Routes>
  <Footer/>
  </BrowserRouter>

@@ -20,7 +20,7 @@ export const PartsList = ({parts}) => {
         <Link to={`/parts/${parts.id}`}>
         <Parts key={parts.id} {...parts} />
         </Link>
-        <button onClick={()=>{addHandler(...parts)}} className="btn">Agregar al Carrito</button>
+        <button onClick={()=>{addHandler(...parts)}} className="btn">Agregar al cart</button>
         </>)
         ): (  
         <progress class="progress w-56 my-5 "></progress>

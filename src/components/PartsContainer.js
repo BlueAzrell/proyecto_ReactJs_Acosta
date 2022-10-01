@@ -28,8 +28,8 @@ export const PartsContainer = () => {
 
  return( <div>
    <PartsList className='flex-row' parts={parts} />
-   <strong>Carrito de compras</strong>{cart.map( (c, i) => <li key={i}>{c}</li>)}
-   <button className='btn' onClick={clearCart}>Borrar Carrito</button>
+   <strong>cart de compras</strong>{cart.map( (c, i) => <li key={i}>{c}</li>)}
+   <button className='btn' onClick={clearCart}>Borrar cart</button>
 
 
  </div>

@@ -404,3 +404,24 @@ article p {
 .fondo-hero{
 background-image: url(https://le-cdn.website-editor.net/97f420ccea2146b3ba8894cfae57b06a/dms3rep/multi/opt/Gaming_Photography_v04_0008_UPDATE-1920w.jpg);
 }
+
+.cart{
+  min-height: 80vh;
+}
+.btn-clear{
+  color:white;
+  background-color: black;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.text-cart{
+  font-size: 4rem;
+}
+@media screen and (max-width: 576px){
+  .font-responsive{
+      font-size: 1.2rem;
+  }
+  .btn-clear{
+      padding: 0.5rem
+  }
+}
