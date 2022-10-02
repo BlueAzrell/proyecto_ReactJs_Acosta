@@ -22,6 +22,8 @@ function App(props) {
 
 <h3 className={styles.title}>{mensaje}</h3>
 
+
+
 <CartProvider>
 <PartsContainer/>
 </CartProvider>

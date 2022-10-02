@@ -3,14 +3,14 @@ import { useContext } from 'react'
 import { Container } from 'react-bootstrap'
 import {motion} from "framer-motion"
 import CartItems from '../CartItems/CartItems'
-import { GlobalContext } from '../../context/CartContext'
+import { CartContext } from '../../context/CartContext'
 import { Link } from 'react-router-dom'
 import FormCart from '../FormCart/FormCart'
 
 
 const Cart = () => {
 
-  const {cart, clear, finalPrice} = useContext(GlobalContext)
+  const {cart, clear, finalPrice} = useContext(CartContext)
   
 
   return (

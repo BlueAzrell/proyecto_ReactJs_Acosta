@@ -31,7 +31,7 @@ function BasicExample() {
         compra: {cart},
         fecha: moment().format("DD MM YYYY hh:mm:ss")
     })
-    
+
     const { buyer: {email, nombre, apellido,telefono},} = formulario
 
     const handleChange = (e)=>{
@@ -50,7 +50,7 @@ function BasicExample() {
         setInFirebase(formulario) 
     }
 
-   
+
 
     const updateStock = (cart)=>{
         setLoading(true)
@@ -60,7 +60,7 @@ function BasicExample() {
             const producto = doc(db,"productos", id)
             updateDoc(producto,{stock: newStock})
         })
-        
+
     }
 
     const setInFirebase =  async (formulario)=>{
@@ -88,7 +88,7 @@ function BasicExample() {
                     window.location.href= "/"
                   })
             })
-    
+
             } catch (error) {
                 console.log(error)
             }
@@ -123,7 +123,7 @@ function BasicExample() {
     </Form>)
     }
 </>
-    
+
   );
 }
 
