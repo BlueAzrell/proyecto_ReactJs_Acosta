@@ -16,6 +16,7 @@ import ProductsContainer from './components/firebase/ProductsContainer';
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import Category from './components/firebase/Category';
+import CartView from './components/shop/CartView';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -47,6 +48,7 @@ root.render(
    <Route path='/shop/item/:slug' element={<ItemDetailContainer/>}/>
    <Route path='/products' element={<ProductsContainer/>}/>
    <Route path='/products/category/:id' element={<Category/>}/>
+   <Route path='/products/cart' element={<CartView/>}/>
   </Routes>
  <Footer/>
  </BrowserRouter>
